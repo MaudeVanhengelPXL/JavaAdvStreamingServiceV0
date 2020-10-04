@@ -2,7 +2,7 @@ package be.pxl.ja.streamingservice.model;
 
 import java.time.LocalDate;
 
-public class Movie extends be.pxl.ja.opdracht1.Content implements be.pxl.ja.opdracht1.Playable {
+public class Movie extends be.pxl.ja.streamingservice.model.Content implements be.pxl.ja.streamingservice.model.Playable {
     public static final int LONG_PLAYING_TIME = 2 * 60 + 15;
     //Long playing time qualifies as two hours and 15 minutes
 
@@ -11,7 +11,7 @@ public class Movie extends be.pxl.ja.opdracht1.Content implements be.pxl.ja.opdr
     private int duration;
     private Genre genre;
 
-    public Movie(String title, be.pxl.ja.opdracht1.Rating maturityRating) {
+    public Movie(String title, be.pxl.ja.streamingservice.model.Rating maturityRating) {
         super(title, maturityRating);
     }
 
