@@ -22,6 +22,26 @@ public class Account {
         this.streamingPlan = streamingPlan;
     }
 
+    public void addProfile(Profile profile)  {
+        //TODO
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public boolean verifyPassword(String password) { return false; }
+    //TODO
+
+
+    public void setPaymentInfo(PaymentInfo paymentInfo) {
+        this.paymentInfo = paymentInfo;
+    }
+
     public Profile getFirstProfile() {
         return profiles.get(0);
     }
