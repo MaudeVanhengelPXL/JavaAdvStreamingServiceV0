@@ -1,5 +1,6 @@
 package be.pxl.ja.streamingservice.model;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class Account {
@@ -14,7 +15,8 @@ public class Account {
         this.email = email;
         this.password = password;
         Profile profile = new Profile();
-        profile.setName("profile1");
+        profile.setName("Profile1");
+        this.profiles = new ArrayList<Profile>();
         profiles.add(profile);
     }
 
